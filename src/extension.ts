@@ -92,9 +92,9 @@ export function activate(context: vscode.ExtensionContext) {
         for (const el of eq) {
             if (!opsList.includes(el)) {
                 // el is number
-                if (el.includes("C")) {
+                if (el.includes("c")) {
                     // nCr
-                    let arr = el.split("C");
+                    let arr = el.split("c");
                     if (arr.length !== 2) {
                         throw new Error("Error parsing nCr expression.");
                     }
@@ -148,7 +148,7 @@ export function activate(context: vscode.ExtensionContext) {
     }
 
     let calc = vscode.commands.registerTextEditorCommand('vscode-compcalc.calc', (editor, edit) => {
-        var equation = editor.document.lineAt(editor.selection.active.line).text;
+        var equation = editor.document.lineAt(editor.selection.active.line).text.toLowerCase();
         edit.replace(editor.document.lineAt(editor.selection.active.line).range, equation + " = " + parse(equation).toLocaleString());
     });
 

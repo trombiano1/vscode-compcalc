@@ -1,6 +1,6 @@
-# compcalc
+# Competitive Calculator
 
-This is a small calculator for estimating the computational complexity of a problem during programming competitions.
+This is a small calculator designed for estimating the computational complexity of a problem during programming competitions.
 
 For example, you might need to quickly calculate 2²⁰₁₀C₅. 
 
@@ -9,7 +9,7 @@ Just create a new line and type:
 2^20*10C5
 ```
 Now hit `Cmd+Alt+c` on macOS or `Ctrl+Alt+c` on Windows and bang! The result will immediately be shown like this 👇
-
+****
 ```
 2^20*10C5 = 264,241,152
 ```
