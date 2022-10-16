@@ -1,8 +1,9 @@
 {
   "name": "vscode-compcalc",
-  "displayName": "vscode-compcalc",
-  "description": "Quick and dirty calculator for approximating complexity during competitive programming.",
+  "displayName": "Competitive Calculator",
+  "description": "Quick and dirty calculator for fast approximate calculations during competitive programming.",
   "version": "0.0.1",
+  "publisher": "trombiano1",
   "engines": {
     "vscode": "^1.72.0"
   },
@@ -19,6 +20,13 @@
         "command": "vscode-compcalc.calc",
         "title": "Calculate"
       }
+    ],
+    "keybindings": [
+        {
+            "command": "vscode-compcalc.calc",
+            "key": "ctrl+alt+c",
+            "mac": "alt+cmd+c"
+        }
     ]
   },
   "scripts": {
