@@ -9,7 +9,6 @@ Just create a new line and type:
 2^20*10C5
 ```
 Now hit `Cmd+Alt+c` on macOS or `Ctrl+Alt+c` on Windows and bang! The result will immediately be shown like this 👇
-****
 ```
 2^20*10C5 = 264,241,152
 ```
@@ -38,6 +37,6 @@ It is able to execute the operations below.
 
 ## Release Notes
 
-### 0.0.1
+### 0.1.0
 
 Beta version release.

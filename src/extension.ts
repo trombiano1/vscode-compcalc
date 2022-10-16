@@ -94,14 +94,15 @@ export function activate(context: vscode.ExtensionContext) {
                 // el is number
                 if (el.includes("c")) {
                     // nCr
-                    let arr = el.split("c");
+                    let arr = el.split("c").filter(n => n);;
                     if (arr.length !== 2) {
                         throw new Error("Error parsing nCr expression.");
                     }
                     n.push(ncr(BigInt(arr[0]), BigInt(arr[1])));
                 } else if (el.includes("!")) {
                     // N!
-                    let arr = el.split("!");
+                    let arr = el.split("!").filter(n => n);
+                    console.log(arr);
                     if (arr.length !== 1) {
                         throw new Error("Error parsing N! expression.");
                     }
