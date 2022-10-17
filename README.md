@@ -1,5 +1,7 @@
 # Competitive Calculator
 
+[日本版はこちら](https://qiita.com/trombiano1/items/aacee3c576e0fd19d417)
+
 This is a small calculator designed for estimating the computational complexity of a problem during programming competitions.
 
 For example, you might need to quickly calculate 2²⁰₁₀C₅. 
@@ -22,14 +24,13 @@ It is able to execute the operations below.
 | Addition       | + |                           |
 | Subtraction    | - |                           |
 | Multiplication | * |                           |
-| Division       | / | Rounds to the nearest integer |
-| Combination       | nCr |  |
+| Division       | / | Rounds down to the nearest integer. |
+| Combination       | nCr | Accepts both uppercase and lowercase. |
 | Factorial       | n! |  |
+| Logarithm       | log(n) | Parenthesis required. Rounds down to the nearest integer.   |
 | Parenthesis       | () |  |
 
-## Known Issues
-
-- Incosistent error messages
+All spaces will be ignored.
 
 ## Outlook
 
@@ -38,5 +39,6 @@ It is able to execute the operations below.
 ## Release Notes
 
 ### 0.1.0
-
 Beta version release.
+### 0.2.0
+Added log support.
