@@ -2,8 +2,13 @@
   "name": "vscode-compcalc",
   "displayName": "Competitive Calculator",
   "description": "Quick and dirty calculator for fast approximate calculations during competitive programming.",
-  "version": "0.2.0",
+  "icon": "icon.png",
+  "version": "0.2.1",
   "publisher": "trombiano1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:trombiano1/vscode-compcalc.git"
+  },
   "engines": {
     "vscode": "^1.72.0"
   },
